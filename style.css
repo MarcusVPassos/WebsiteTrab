@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Estilização da pagina e fonte da letra */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+/* Centralização e ajuste do background*/
+body{
+    background:linear-gradient(45deg, aqua, blue);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* Quadrado atras container */
+main.container{
+    background-color: white;
+    max-width: 400px;
+    max-height: 40rem;
+    padding: 4rem;
+    box-shadow: 15px 15px 5px;
+    border-radius: 10px;
+}
+
+/* Edição Login*/
+main h2{
+    font-weight: 500;
+    margin-bottom: 2rem;
+    position: relative;
+
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, aqua, blue);
+}
+/* fim Edição Login */
+
+#usuario {
+    font-size: 18px;
+    margin-top: 2rem;
+    /*border-left: 6px solid aqua;*/
+}
+#senha{
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /*border-left: 6px solid aqua;*/
+}
+
+/* Edição Entrar */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    outline: none;
+    color: black;
+}
+
+.input-field input ::placeholder{
+    color: black;
+}
+
+form input[type="submit"]{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, aqua, blue);
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3 ease;
+}
+/* Animação mouse em cima do entrar */
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, aqua, blue);
+}
+/* fim edição entrar */
+
+/* Edição de cor linkage Registre-se */
+.register{color: black;text-align: center;}
+            a{text-decoration: none;}
+            a:link{color:rgb(5, 36, 214);}
+            a:visited{color:rgb(5, 36, 214);}
